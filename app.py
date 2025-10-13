@@ -16,7 +16,7 @@ height = st.number_input("Height (cm)", min_value=0.0)
 ap_hi = st.number_input("Systolic BP (ap_hi)", min_value=0)
 ap_lo = st.number_input("Diastolic BP (ap_lo)", min_value=0)
 cholesterol = st.selectbox("Cholesterol Level (1: normal, 2: above normal, 3: well above normal)", [1, 2, 3])
-
+gluc = st.selectbox("Glucose Level (1: normal, 2: above normal, 3: well above normal)", [1, 2, 3])
 
 # Creating a predict button
 if st.button("Predict"):
@@ -34,6 +34,7 @@ if st.button("Predict"):
         "ap_hi": ap_hi,
         "ap_lo": ap_lo,
         "cholesterol": cholesterol,
+        "gluc": gluc,
         "bmi": bmi}])
 
     # Creating prediction
