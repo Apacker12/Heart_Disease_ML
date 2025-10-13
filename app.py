@@ -35,7 +35,6 @@ if st.button("Predict"):
         "ap_hi": ap_hi,
         "ap_lo": ap_lo,
         "cholesterol": cholesterol,
-        "gluc": gluc,
         "bmi": bmi}])
 
     # Creating prediction
