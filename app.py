@@ -31,7 +31,6 @@ if st.button("Predict"):
     input_df = pd.DataFrame([{
         "age": age,
         "weight": weight,
-        "height": height,
         "ap_hi": ap_hi,
         "ap_lo": ap_lo,
         "cholesterol": cholesterol,
