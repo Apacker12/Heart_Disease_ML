@@ -35,14 +35,14 @@ if st.button("Predict"):
         "ap_lo": ap_lo,
         "cholesterol": cholesterol,
         "gluc": gluc,
-        "bmi": bmi}])
+        "bmi": bmi
+    }])
 
-# Creating prediction
-prediction = model.predict(input_df)[0]
+    # Creating prediction
+    prediction = model.predict(input_df)[0]
 
-# Displaying prediction with color
-if prediction == 1:
-    st.markdown("<h3 style='color: red;'>Prediction: Cardiovascular Disease</h3>", unsafe_allow_html=True)
-else:
-    st.markdown("<h3 style='color: green;'>Prediction: No Disease</h3>", unsafe_allow_html=True)
-
+    # Displaying prediction with color
+    if prediction == 1:
+        st.markdown("<h3 style='color: red;'>Prediction: Cardiovascular Disease</h3>", unsafe_allow_html=True)
+    else:
+        st.markdown("<h3 style='color: green;'>Prediction: No Disease</h3>", unsafe_allow_html=True)
